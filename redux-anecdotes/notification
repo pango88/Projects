@@ -1,0 +1,9 @@
+* generate a random id
+* dispatch SET_NOTIFICATION with your notification and that random id
+* after a timeout, dispatch HIDE_NOTIFICATION with the same random id
+
+in the reducer
+* on SET_NOTIFICATION, set a "current_notification_id" in the store
+* on HIDE_NOTIFICATION only actually hide the notification if the dispatched id is the same as the current_notification_id
+
+That way you won't mess around with cancelling timeouts - obsolete HIDE_NOTIFICATION actions just won't do anything.
