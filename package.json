@@ -1,0 +1,27 @@
+{
+  "name": "inventory-application",
+  "version": "1.0.0",
+  "description": "inventory-application react/express",
+  "main": "server.js",
+  "scripts": {
+    "client-install": "cd client && npm install",
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "Pango88",
+  "license": "MIT",
+  "dependencies": {
+    "concurrently": "^5.1.0",
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "express": "^4.17.1",
+    "hbs": "^4.1.0",
+    "http-errors": "~1.6.3",
+    "morgan": "~1.9.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  }
+}
