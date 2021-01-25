@@ -1,0 +1,81 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BlogView renders blogView correctly 1`] = `
+<div>
+  <div
+    class="blog"
+  >
+    testTitle
+     
+    <span
+      style="font-weight: bold;"
+    >
+      by
+    </span>
+     
+    reduxTesting
+     
+    <p>
+      <span
+        style="font-weight: bold;"
+      >
+        url:
+      </span>
+       
+      jest.com
+    </p>
+    <p
+      id="likes"
+    >
+      <span
+        style="font-weight: bold;"
+      >
+        likes:
+      </span>
+       
+      0
+      <button
+        class="likeBtn"
+        id="like"
+      >
+        like
+      </button>
+    </p>
+    <p>
+      <span
+        style="font-weight: bold;"
+      >
+        creator:
+      </span>
+       
+      whatever
+    </p>
+    <h3>
+      Comments
+    </h3>
+    <form>
+      <input
+        id="comment"
+        name="content"
+        type="text"
+      />
+      <button
+        type="submit"
+      >
+        add comment
+      </button>
+    </form>
+    <ul>
+      <li>
+        testComment
+      </li>
+    </ul>
+    <button
+      id="#delete"
+      style="color: red; font-weight: bold;"
+    >
+      remove
+    </button>
+  </div>
+</div>
+`;
